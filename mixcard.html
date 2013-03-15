@@ -16,17 +16,19 @@
 	<div class="grid-container">
 		{{> quoteTimeline}}
 	</div>
+	{{> loadMasonry}}
 </body>
 
 <template name="quoteTimeline">
   
 	<div id="container">
-		{{> loadMasonry}}
+		container 
 		{{#each quote}}
 		  	{{> quotePreview}}
 		{{/each}}
 	</div>
 	
+	{{loadmasonry}}
 </template>
 
 
