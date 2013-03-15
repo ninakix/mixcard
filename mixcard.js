@@ -8,13 +8,16 @@ if (Meteor.isClient) {
 	};
 	
 	
-	$( function() {
-		$('#container').masonry({
-			itemSelector : '.item',
-			columnWidth : 240
+	Template.loadMasonry.created = function () {
+	
+		$( function() {
+			$('#container').masonry({
+				itemSelector : '.item',
+				columnWidth : 240
+			});
 		});
-	});
    
+   };
 
 }
 

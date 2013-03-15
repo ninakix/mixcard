@@ -20,7 +20,8 @@
 
 <template name="quoteTimeline">
   
-	<div class="container">
+	<div id="container">
+		{{> loadMasonry}}
 		{{#each quote}}
 		  	{{> quotePreview}}
 		{{/each}}
@@ -34,4 +35,8 @@
 		<p class="quotePrevText">"{{text}}"</p>
 		<p class="quoteSourceText">— <a href="{{sourceURL}}">{{sourceTitle}}</a></p>
 	</div>
+</template>
+
+<template name="loadMasonry">
+	
 </template>
